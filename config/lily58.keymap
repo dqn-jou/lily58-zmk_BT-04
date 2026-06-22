@@ -62,11 +62,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp GRAVE   &kp F1                  &kp F2     &kp F3      &kp F4     &kp F5                                          &kp F6     &kp F7     &kp F8         &kp F9        &kp F10          &kp F11
-&bt BT_CLR  &cmd_shift_grave_chord  &kp SPACE  &kp SPACE   &kp SPACE  &kp PAGE_UP                                     &kp SPACE  &kp HOME   &kp PAGE_UP    &kp UP_ARROW  &kp PRINTSCREEN  &kp F12
-&bt BT_PRV  &kp SPACE               &kp SPACE  &kp DELETE  &kp SPACE  &kp PAGE_DOWN                                   &kp SPACE  &kp END    &kp PAGE_DOWN  &kp DOWN      &kp SPACE        &kp SPACE
-&bt BT_NXT  &trans                  &trans     &trans      &trans     &kp BACKSPACE  &kp C_AC_COPY    &kp C_AC_PASTE  &trans     &kp SPACE  &kp LEFT       &kp RIGHT     &kp SPACE        &kp SPACE
-                                               &trans      &trans     &trans         &trans           &trans          &trans     &trans     &trans
+&kp GRAVE   &kp F1                  &kp F2     &kp F3      &kp LA(F4)     &kp F5                                          &kp F6     &kp F7     &kp F8         &kp F9        &kp F10          &kp F11
+&bt BT_CLR  &cmd_shift_grave_chord  &kp SPACE  &kp RG(E)   &kp LG(LA(R))  &kp PAGE_UP                                     &kp SPACE  &kp HOME   &kp PAGE_UP    &kp UP_ARROW  &kp PRINTSCREEN  &kp F12
+&bt BT_PRV  &kp SPACE               &kp SPACE  &kp DELETE  &kp SPACE      &kp PAGE_DOWN                                   &kp SPACE  &kp END    &kp PAGE_DOWN  &kp DOWN      &kp SPACE        &kp SPACE
+&bt BT_NXT  &trans                  &trans     &trans      &trans         &kp BACKSPACE  &kp C_AC_COPY    &kp C_AC_PASTE  &trans     &kp SPACE  &kp LEFT       &kp RIGHT     &kp SPACE        &kp SPACE
+                                               &trans      &trans         &trans         &trans           &trans          &trans     &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -83,11 +83,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &trans   &trans      &trans                                       &trans       &trans     &trans     &trans    &trans     &trans
-&kp GRAVE   &kp N1        &kp N2        &kp N3   &kp N4      &kp N5                                       &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &trans
-&kp F1      &kp F2        &kp F3        &kp F4   &kp F5      &kp F6                                       &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
-&kp F7      &kp F8        &kp F9        &kp F10  &bt BT_PRV  &bt BT_NXT  &kp C_AC_COPY    &kp C_AC_PASTE  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
-                                        &trans   &trans      &trans      &trans           &trans          &trans       &trans     &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4                                   &trans       &trans     &trans     &trans    &trans     &trans
+&kp GRAVE   &kp N1        &kp N2        &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT                                     &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &trans
+&kp F1      &kp F2        &kp F3        &kp F4        &kp K_VOL_DN      &kp K_VOL_UP                                   &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
+&kp F7      &kp F8        &kp F9        &kp F10       &bt BT_PRV        &bt BT_NXT    &kp C_AC_COPY    &kp C_AC_PASTE  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
+                                        &trans        &trans            &trans        &trans           &trans          &trans       &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
